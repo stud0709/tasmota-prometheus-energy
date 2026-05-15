@@ -3,6 +3,8 @@
 ## TL;DR
 This project provides an autonomous Berry script (`grafana_push.be`) for Tasmota-based smart plugs. It actively polls the device's energy sensors and pushes the data directly to Grafana Cloud's Prometheus endpoint via InfluxDB Line Protocol. No intermediate MQTT broker, Node-RED, or Prometheus scrape server is required.
 
+![Power Graph](./images/power.png)
+
 ## Bird's Eye View
 Traditionally, Tasmota devices broadcast JSON payloads over MQTT (`tele#SENSOR`), which are then translated and scraped by Prometheus. 
 This script bypasses that entirely:
